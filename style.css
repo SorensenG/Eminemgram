@@ -1,0 +1,286 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--corbuton);  
+
+}
+
+body{
+    /* Variaveis em css */
+    --cordefundo: black;
+    --corbuton:#3c96ed;
+
+    background: var(--cordefundo);
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.wrapper{
+    height: 100vh;
+
+}
+
+.container{
+    margin: 0 auto ;
+    min-height: 95%;
+    width: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.coluna{
+flex-grow: 1;
+width: 50%;
+}
+.imagem{
+background-image: url(./images/main-foto.png);
+background-repeat: no-repeat;
+background-size: 120%;
+background-position: center;
+height: 700px;
+margin-bottom: 50px;
+}
+
+.login{
+padding-left: 20px;
+}
+
+.painel{
+background-color: rgb(49, 49, 49);
+border: 1px solid #1f1f1f;
+text-align: center;
+padding: 20px 0;
+
+}
+
+.logo-img{
+width: 70%;
+}
+
+
+input[type="password"], input[type="text"]{
+background-color: rgb(134, 134, 134);
+border: 1px solid rgb(255, 255, 255);
+height: 40px;
+border-radius: 4px;
+margin-top: 10px;
+padding: 10px;
+font-size: 13px;
+width: 320px;
+color: black;
+}
+
+input[type="password"]:focus,input[type="text"]:focus{
+outline: 0px;
+border: 1px solid #ffffff;
+}
+.botao-submit {
+    display: inline-block; /* Necessário para se comportar como um botão */
+    width: 320px;
+    margin-top: 10px;
+    height: 30px;
+    line-height: 30px; /* Centraliza o texto verticalmente */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    background-color: var(--corbuton);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none; /* Remove borda padrão */
+}
+
+.botao-submit:hover {
+    background-color: #2a7ec4; /* Efeito no hover (opcional) */
+}
+
+
+input[type="submit"]{
+    width: 320px;
+    margin-top: 10px;
+    height: 30px;
+    border: 0;
+    background-color: var(--corbuton);
+    border-radius: 4px;
+    color: #ffff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.infobox{
+    background-color: rgb(49, 49, 49);
+    height: 60px;
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 20px 0;
+    margin: 10px auto 0;
+}
+
+
+.infobox p a {
+    font-weight: bold;
+    user-select: none;
+
+}
+
+.get-app{
+    text-align: center;
+    padding-top: 15px;
+    color: #fff;
+}
+.lojas{
+    margin-top: 16px;
+}
+
+.lojas img{
+    height: 40 px;
+    width: 150px;
+    padding: 0 2px;
+}
+
+footer{
+    text-align: center;
+    height: 50px;
+}
+
+footer a{
+
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-right: 7px;
+}
+
+.texto{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: grey;
+    display: inline-block;
+}
+
+/* pagina cadastro */
+
+.container-cadastro{
+    margin: 0 auto ;
+    min-height: 95%;
+    max-width:400px;
+    display: flex;
+    align-items: center;
+}
+
+.mensagem{
+margin: 10px 70px;
+
+}
+
+.mensagem span{
+text-align: center;
+font-size: 17px;
+line-height: 20px;
+color: #8e8e8e;
+}
+
+.face{
+    width: 320px;
+    margin-top: 10px;
+    height: 32px;
+    border: 0;
+    background-color: var(--corbuton);
+    border-radius: 4px;
+    color: #ffff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.divisor-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.line{
+    height: 1px;
+    background-color: #e6e6e6;
+    width: 36%;
+}
+.line1{
+    height: 1px;
+    background-color: #e6e6e6;
+    width: 36%;
+}
+
+.divisor-tag{
+    color: #5c5c5c;
+    margin: 0 1.5%;
+    user-select: none;
+}
+
+
+/* responsividade */
+@media(max-width:850px){
+.imagem{
+    display: none;
+}
+.container{
+    width: 70%;
+}
+
+.login{
+padding-left: 0;
+}
+footer a{
+    font-size: 13px;
+    color: black;
+    text-transform: uppercase;
+    margin-right: 7px;
+}
+.texto{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: grey;
+    display: inline-block;
+}
+}
+
+@media(max-width:500px){
+    .container{
+        width: 90%;}
+
+    .container-cadastro{
+    width: 90%;
+    }
+
+    footer a{
+        font-size: 10px;
+        color: black;
+        text-transform: uppercase;
+        margin-right: 7px;
+    }
+    .texto{
+        font-size: 9px;
+        text-transform: uppercase;
+        color: grey;
+        display: inline-block;
+    }
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    }
+
